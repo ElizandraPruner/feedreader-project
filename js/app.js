@@ -50,7 +50,6 @@ function init() {
        data: JSON.stringify({url: feedUrl}),
        contentType:"application/json",
        success: function (result, status){
-
                  var container = $('.feed'),
                      title = $('.header-title'),
                      entries = result.feed.entries,
@@ -116,6 +115,8 @@ $(function() {
      * the menu, load the feed, and prevent the default action
      * (following the link) from occurring.
      */
+   
+    
     feedList.on('click', 'a', function() {
         var item = $(this);
 
@@ -127,7 +128,12 @@ $(function() {
     /* When the menu icon is clicked on, we need to toggle a class
      * on the body to perform the hiding/showing of our menu.
      */
-    menuIcon.on('click', function() {
+    
+        menuIcon.on('click', function() {
         $('body').toggleClass('menu-hidden');
     });
+
+    
+    
 }());
+

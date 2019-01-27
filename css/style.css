@@ -47,6 +47,7 @@ h2 {
 .icon-list {
     font-size: 1.5em;
     color: #FFF;
+
 }
 
 .slide-menu {
@@ -58,7 +59,10 @@ h2 {
     width: 10em;
     transform: translate3d(0, 0, 0);
     transition: transform 0.2s;
+    display: block;
+    
 }
+
 
 .slide-menu ul {
     list-style: none;
@@ -79,6 +83,7 @@ h2 {
 .menu-hidden .slide-menu {
     transform: translate3d(-12em, 0, 0);
     transition: transform 0.2s;
+
 }
 
 .feed {
@@ -89,4 +94,7 @@ h2 {
     border-bottom: 1px solid #ddd;
     padding: 1em;
     margin: 0.5em 0;
+}
+
+
 }
